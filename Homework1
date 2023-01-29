@@ -1,0 +1,36 @@
+package Homework1;
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Homework1 {
+    public static void main(String[] args) {
+
+        String txt = "Homework has been done";
+
+      // დავალება 1
+        int num = 44;
+        int num1 = 4;
+        float fl = 1.333f;
+        char ch = '!';
+        boolean bl = false;
+
+      // დავალება 2
+        System.out.println(num / num1);
+        System.out.println(num1 * num);
+        System.out.println(num + num1);
+
+      // დავალება 3
+        System.out.println(num > 6 && num1 < 3);
+        System.out.println(num > 6 || num1 < 3);
+
+
+      // დავალება 4
+        LocalDate today = LocalDate.now();
+        LocalDate birthdate = LocalDate.of(2000, 3, 3);
+        Period age = Period.between(birthdate,today);
+        System.out.println("ჩემი დაბადების წელია 2000, ჩემი ასაკია" + " " + age.getYears());
+
+
+
+    }
+}
